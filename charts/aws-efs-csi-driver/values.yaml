@@ -82,6 +82,10 @@ controller:
 ## Node daemonset variables
 
 node:
+  kubeletPath: "/var/snap/microk8s/common/var/lib/kubelet"
+  efsStatePath: "/var/snap/microk8s/common/run/efs"
+  efsUCPath: "/var/snap/microk8s/common/run/amazon/efs"
+  efsLegacyUCPath: "/var/snap/microk8s/common/etc/amazon/efs"
   # Number for the log level verbosity
   logLevel: 2
   hostAliases:
